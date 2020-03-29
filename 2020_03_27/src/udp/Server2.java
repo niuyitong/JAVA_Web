@@ -11,7 +11,7 @@ import java.util.Map;
 
 // 重构第一步：把收到的请求内容，作为响应直接发送回去 —— 回显服务
 // 重构第二步：多加一些调试打印信息，便于观察发生了什么
-// 重构第三步：增加业务
+// 重构第三步：增加字典业务（通过Map存储）
 
 // Server 必须公开出 port，否则客户端找不到我
 // 端口(port) 可以在 0 - 65535 之间随便选
@@ -43,9 +43,9 @@ public class Server2 {
         // 创建套接字
         // DatagramSocket 是 UDP 协议专用的 套接字
         // PORT 是我选好的准备开饭店的地址
-        System.out.println("DEBUG: 准备开一家饭店");
+        System.out.println("DEBUG: 准备服务器");
         try (DatagramSocket serverSocket = new DatagramSocket(PORT)) {
-            System.out.printf("DEBUG: 在 %d 这个端口上开好一家饭店了%n", PORT);
+            System.out.printf("DEBUG: 在 %d 这个端口上开始接受请求了%n", PORT);
 
             // 提前准备好一个字节数组，用来存放接收到的数据（请求）
             // 一次最多可以接收 8192 个字节

@@ -16,7 +16,7 @@ public class Server {
         // DatagramSocket 是 UDP 协议专用的 套接字
         // PORT 是我选好的准备开饭店的地址
         try (DatagramSocket serverSocket = new DatagramSocket(PORT)) {
-            System.out.printf("DEBUG: 在 %d 这个端口上开好一家饭店了%n", PORT);
+            System.out.printf("DEBUG: 在 %d 这个端口上准备好接受请求了%n", PORT);
 
             // 提前准备好一个字节数组，用来存放接收到的数据（请求）
             // 一次最多可以接收 8192 个字节
