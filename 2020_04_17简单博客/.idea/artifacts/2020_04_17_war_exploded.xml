@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="2020_04_17简单博客:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/2020_04_17_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="2020_04_17简单博客" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="fastjson-1.2.68" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="2020_04_17简单博客/web/Web" />
+    </root>
+  </artifact>
+</component>
